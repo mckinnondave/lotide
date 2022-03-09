@@ -24,17 +24,13 @@ const eqArrays = function(arr1, arr2) {
 
 const middle = function(arr) {
   let output = []
-  let middle1 = ""
-  let middle2 = ""
+  let middle = Math.floor(arr.length/2)
   if (arr.length > 2 && arr.length % 2 !== 0) {
-    middle1 = Math.floor(arr.length/2);
-    output.push(arr[middle1])
+    output.push(arr[middle])
   }
   if (arr.length > 2 && arr.length % 2 === 0) {
-    middle1 = Math.floor(arr.length/2 - 1) 
-    middle2 = Math.floor(arr.length/2)
-    output.push(arr[middle1])
-    output.push(arr[middle2])
+    output.push(arr[middle - 1])
+    output.push(arr[middle])
   }
   return output
 }
