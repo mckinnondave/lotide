@@ -1,4 +1,4 @@
-const eqArrays = function(arr1, arr2) {
+const assertArraysEqual = function(arr1, arr2) {
   let output = ""
   for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] !== arr2[i]) {
@@ -13,7 +13,7 @@ const eqArrays = function(arr1, arr2) {
   }
 }
 
-eqArrays([1, 2, 3], [1, 2, 3])
-eqArrays([0, 2, 3], [1, 2, 3])
-eqArrays([1, 2, "3"], [1, 2, 3])
-eqArrays([1, 2, "3"], [1, 2, "3"])
+assertArraysEqual([1, 2, 3], [1, 2, 3])
+assertArraysEqual([0, 2, 3], [1, 2, 3])
+assertArraysEqual([1, 2, "3"], [1, 2, 3])
+assertArraysEqual([1, 2, "3"], [1, 2, "3"])
