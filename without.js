@@ -26,15 +26,15 @@ const eqArrays = function(arr1, arr2) {
 const without = function(source, itemsToRemove) {
   let output = []
   for (let i = 0; i < source.length; i++) {
-    for (let j = 0; j < itemsToRemove.length; j++) {
-      if (source[i] !== itemsToRemove[j]) {
-        output.push(source[i])
+    let matchFound = itemsToRemove.includes(source[i])
+    if (matchFound === false) {
+      output.push(source[i])
     }
-    } 
   }
-  console.log(output);
+  return output
 }
 
 const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]); 
+console.log(without(words, ["lighthouse"])); 
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+console.log(without(["1", "2", "3"], [1, 2, "3"])) 
