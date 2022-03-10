@@ -8,15 +8,15 @@ const assertEqual = function(actual, expected) {
 
 const countLetters = function(str) {
   let object = {};
-  str = str.replace(/ /gi, "")
+  str = str.replace(/ /gi, "");
   for (const letter of str) {
     if (object[letter]) {
-      object[letter]++
+      object[letter]++;
     } else {
-      object[letter] = 1
+      object[letter] = 1;
     }
   }
-  return object
-}
+  return object;
+};
 
-console.log(countLetters("lighthouse in the house"))
+console.log(countLetters("lighthouse in the house"));
