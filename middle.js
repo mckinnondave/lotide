@@ -9,9 +9,9 @@ const eqArrays = function(arr1, arr2) {
 
 const assertArraysEqual = function(arr1, arr2) {
   if (eqArrays(arr1, arr2)) {
-    console.log(`✅✅✅ The two arrays DO match!`);
+    console.log(`✅✅✅ Assertion Passed: ${(arr1)} === ${(arr2)}`);
   } else {
-    console.log(`❌❌❌ The two arrays do NOT match`);
+    console.log(`❌❌❌ Assertion Failed: ${(arr1)} !== ${(arr2)}`);
   }
 };
 
@@ -33,3 +33,4 @@ assertArraysEqual(middle([2, 3, 4]), [3]);
 assertArraysEqual(middle([2, 3, 4, 5]), [3, 4]);
 assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
 assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
+assertArraysEqual(middle([1, 2, 3, 4, 4, 5, 6]), [3, 4]);
