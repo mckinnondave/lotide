@@ -5,6 +5,6 @@ const words = ["Yo Yo", "Lighthouse", "Labs"];
 
 describe("#tail", () => {
   it("returns ['Lighthouse', 'Labs'] for ['Yo Yo', 'Lighthouse', 'Labs']", () => {
-    assert.deepEqual(tail(words), ['Lighthouse', 'Labs'])
+    assert.deepEqual(tail(words), ['Lighthouse', 'Labs']);
   });
 });
