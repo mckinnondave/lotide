@@ -1,4 +1,4 @@
-const eqObjects = require("./eqObjects")
+const eqObjects = require("./eqObjects");
 
 const assertObjectsEqual = function(object1, object2) {
   const inspect = require('util').inspect;
@@ -9,7 +9,7 @@ const assertObjectsEqual = function(object1, object2) {
   }
 };
 
-module.exports = assertObjectsEqual
+module.exports = assertObjectsEqual;
 
 // const cd = { c: "1", d: ["2", 3] };
 // const dc = { d: ["2", 3], c: "1" };
