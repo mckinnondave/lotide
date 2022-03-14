@@ -1,10 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ ${actual} === ${expected}`);
-  } else {
-    console.log(`❌❌❌ ${actual} !== ${expected}`);
-  }
-};
+// const assertEqual = require("./assertEqual")
 
 const findKey = function(object, callback) {
   let result = "";
@@ -20,35 +14,36 @@ const findKey = function(object, callback) {
   return result;
 };
 
-let keyFunc = findKey({
-  "Blue Hill": { stars: 1 },
-  "Akaleri":   { stars: 3 },
-  "noma":      { stars: 2 },
-  "elBulli":   { stars: 3 },
-  "Ora":       { stars: 2 },
-  "Akelarre":  { stars: 3 }
-}, x => x.stars === 2);
+module.exports = findKey;
 
-let keyFunc2 = findKey({
-  "Blue Hill": { stars: 1 },
-  "Akaleri":   { stars: 3 },
-  "noma":      { stars: 2 },
-  "elBulli":   { stars: 3 },
-  "Ora":       { stars: 2 },
-  "Akelarre":  { stars: 3 }
-}, x => x.stars === 5);
+// let keyFunc = findKey({
+//   "Blue Hill": { stars: 1 },
+//   "Akaleri":   { stars: 3 },
+//   "noma":      { stars: 2 },
+//   "elBulli":   { stars: 3 },
+//   "Ora":       { stars: 2 },
+//   "Akelarre":  { stars: 3 }
+// }, x => x.stars === 2);
 
-let keyFunc3 = findKey({
-  "Blue Hill": { stars: 1 },
-  "Akaleri":   { stars: 3 },
-  "noma":      { stars: 2 },
-  "elBulli":   { stars: 3 },
-  "Ora":       { stars: 2 },
-  "Akelarre":  { stars: 3 }
-}, x => x.stars === 3);
+// let keyFunc2 = findKey({
+//   "Blue Hill": { stars: 1 },
+//   "Akaleri":   { stars: 3 },
+//   "noma":      { stars: 2 },
+//   "elBulli":   { stars: 3 },
+//   "Ora":       { stars: 2 },
+//   "Akelarre":  { stars: 3 }
+// }, x => x.stars === 5);
+
+// let keyFunc3 = findKey({
+//   "Blue Hill": { stars: 1 },
+//   "Akaleri":   { stars: 3 },
+//   "noma":      { stars: 2 },
+//   "elBulli":   { stars: 3 },
+//   "Ora":       { stars: 2 },
+//   "Akelarre":  { stars: 3 }
+// }, x => x.stars === 3);
 
 
-assertEqual(keyFunc, "noma");
-assertEqual(keyFunc2, "undefined");
-assertEqual(keyFunc2, "noma"); // Intentionally false
-assertEqual(keyFunc3, "Akaleri");
+// assertEqual(keyFunc, "noma");
+// assertEqual(keyFunc2, "undefined");
+// assertEqual(keyFunc3, "Akaleri");
