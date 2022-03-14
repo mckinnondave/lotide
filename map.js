@@ -1,8 +1,8 @@
-const eqArrays = require("./eqArrays")
+// const eqArrays = require("./eqArrays")
 
-const assertArraysEqual = require("./assertArraysEqual")
+// const assertArraysEqual = require("./assertArraysEqual")
 
-const words = ["ground", "control", "to", "major", "tom"];
+// const words = ["ground", "control", "to", "major", "tom"];
 
 
 const map = function(array, callback) {
