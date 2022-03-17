@@ -1,0 +1,26 @@
+{
+  "name": "@mckinnondave/lotide",
+  "version": "1.0.1",
+  "description": "This is a simplified library of Lodash methods",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mckinnondave/lotide.git"
+  },
+  "author": "Dave McKinnon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mckinnondave/lotide/issues"
+  },
+  "homepage": "https://github.com/mckinnondave/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^9.2.2"
+  }
+}
